@@ -6,7 +6,7 @@ const config = {
     entry: [
         'webpack-hot-middleware/client',
         'babel-polyfill',
-        './src/index'
+        './client/index'
     ],
     output: {
         path: path.join(__dirname, 'dist'),
