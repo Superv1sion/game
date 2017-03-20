@@ -5,6 +5,7 @@ import webpackHotMiddleware from 'webpack-hot-middleware';
 import path from 'path';
 import express from 'express';
 import webpackConfig from './config/webpack.config';
+import config from './config/config';
 
 let app = new express();
 let compiler = webpack(webpackConfig);
@@ -19,5 +20,5 @@ app.get("/", function(req, res) {
 
 let server = http.createServer(app);
 
-server.listen(3000);
-console.log("Server is listening on port 3000");
+server.listen(config.app.port);
+console.log("Server is listening on port: " + config.app.port);
