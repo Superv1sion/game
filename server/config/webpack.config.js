@@ -23,7 +23,7 @@ const config = {
             {
                 loaders: ['react-hot', 'babel-loader'],
                 include: [
-                    path.resolve(__dirname, "../public"),
+                    path.resolve(__dirname, "../../client"),
                 ],
                 test: /\.js$/,
                 plugins: ['transform-runtime'],
